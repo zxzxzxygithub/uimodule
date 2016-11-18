@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_isprotected"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBlue"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/iv_protected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/guard" />
+
+    <TextView
+        android:id="@+id/tv_protectnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/iv_protected"
+        android:layout_alignTop="@+id/iv_protected"
+        android:background="@drawable/circle_guide"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        tools:text="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/iv_protected"
+        android:layout_alignRight="@+id/iv_protected"
+        android:layout_below="@+id/iv_protected"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/isprotected"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv_launchtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="00:00:23"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>
